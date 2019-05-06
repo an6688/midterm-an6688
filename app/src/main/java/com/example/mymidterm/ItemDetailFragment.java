@@ -60,8 +60,23 @@ public class ItemDetailFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.item_detail, container, false);
 
         // Show the dummy content as text in a TextView.
-        if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.details);
+//        if (mItem != null) {
+//            ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.details);
+//        }
+        if (mItem.equals("Profile Page")){
+            // professional about me
+            rootView = inflater.inflate(R.layout.activity_about_me, container, false);
+
+        }
+            else if (mItem.equals("Random Info")){
+            //fav books
+
+        }
+            else if (mItem.equals("Guest Book")){
+                //random info about me
+        }
+            else if (mItem.equals("Current Location")) {
+            // use google maps here
         }
 
         return rootView;

@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#49BEFF</color>
+    <color name="colorPrimaryDark">#65DCE5</color>
+    <color name="colorAccent">#0D5D98</color>
+
+    <color name="address">#2F7092</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#80FFFFFF</color>
+    <color name="circleBorder">#30FFFFFF</color>
+    <color name="gradEnd">#9BE790</color>
+    <color name="gradStart">#379F28</color>
+    <color name="followersBg">#45E12F</color>
+    <color name="followingBg">#97E35B</color>
+    <color name="grey">#E5E5E5</color>
+    <color name="black">#000000</color>
+
 </resources>

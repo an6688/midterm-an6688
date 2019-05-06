@@ -26,10 +26,11 @@ public class DummyContent {
     private static final int COUNT = 25;
 
     static {
-        // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
-            addItem(createDummyItem(i));
-        }
+
+        addItem(new DummyItem("Profile Page","Profile Page", "About me"));
+        addItem(new DummyItem("Random Info","Random Info", "Misc info about me"));
+        addItem(new DummyItem("Guest Book","Guest Book", "This will eventually change"));
+        addItem(new DummyItem("Current Location","Random location", "This will eventually change"));
     }
 
     private static void addItem(DummyItem item) {

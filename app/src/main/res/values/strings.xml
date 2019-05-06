@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">My Midterm</string>
     <string name="title_item_detail">Item Detail</string>
+    <string name="anil_coklar">Anil Coklar</string>
+    <string name="my_address">Portland, OR</string>
+    <string name="_666k">666K</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="email">Email</string>
+    <string name="anil_coklar_oit_edu">anil.coklar@oit.edu</string>
+    <string name="phone">Phone</string>
+    <string name="_1_503_123_4567">+1-503-123-4567</string>
+    <string name="twitter">Twitter</string>
+    <string name="twitterUsername">"I don't have a twitter"</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_com_ani">facebook.com/ani</string>
+
 </resources>
