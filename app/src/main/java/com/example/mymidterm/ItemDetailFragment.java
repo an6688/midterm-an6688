@@ -5,9 +5,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.mymidterm.dummy.DummyContent;
@@ -23,6 +27,7 @@ public class ItemDetailFragment extends Fragment {
      * The fragment argument representing the item ID that this fragment
      * represents.
      */
+
     public static final String ARG_ITEM_ID = "item_id";
 
     /**
@@ -58,23 +63,47 @@ public class ItemDetailFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.item_detail, container, false);
 
-        if (mItem.id.equals("Profile Page")){
+        if (mItem.id.equals("1")){
             // professional about me
             rootView = inflater.inflate(R.layout.activity_about_me, container, false);
 
 /*            Intent intent = new Intent (rootView.getContext(),AboutMe.class);
             startActivity(intent);*/
         }
-            else if (mItem.id.equals("Random Info")){
-            //fav books
+            else if (mItem.id.equals("2")){
+            //fav books or movies or whatev
 
         }
-            else if (mItem.id.equals("Sign the guest book!")){
-                //random info about me
+            else if (mItem.id.equals("3")) {
+            //guest book
+            rootView = inflater.inflate(R.layout.activity_guest_book, container, false);
+
+            final EditText email = rootView.findViewById(R.id.guest_email);
+            final EditText phone = rootView.findViewById(R.id.guest_phone);
+            final EditText name = rootView.findViewById(R.id.guest_name);
+            final EditText comments = rootView.findViewById(R.id.guest_comments);
+
+            Button button = rootView.findViewById(R.id.btnSubmit);
+
+                        button.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    final GuestBookData guestBookForm = new GuestBookData(email.getText().toString(),
+                            phone.getText().toString(),
+                            name.getText().toString(),
+                            comments.getText().toString());
+
+                    Intent intent = new Intent (getContext(), GuestBookConfirmation.class);
+                    intent.putExtra("GuestBookData", guestBookForm);
+
+                    startActivity(intent);
+                }
+            });
         }
-            else if (mItem.id.equals("Location")) {
+            else if (mItem.id.equals("4")) {
             // use google maps
             startActivity(new Intent(getContext(), MapsActivity2.class));
         }
