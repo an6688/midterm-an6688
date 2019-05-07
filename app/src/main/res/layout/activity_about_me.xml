@@ -44,7 +44,6 @@
             android:textColor="@color/black"
             android:textSize="32sp" />
 
-
         <TextView
             android:id="@+id/my_addy"
             android:layout_width="wrap_content"

@@ -27,10 +27,10 @@ public class DummyContent {
 
     static {
 
-        addItem(new DummyItem("Profile Page","Profile Page", "About me"));
-        addItem(new DummyItem("Random Info","Random Info", "Misc info about me"));
-        addItem(new DummyItem("Guest Book","Guest Book", "This will eventually change"));
-        addItem(new DummyItem("Current Location","Random location", "This will eventually change"));
+        addItem(new DummyItem("Profile Page","About me", "About me"));
+        addItem(new DummyItem("Random Info","", "Misc info about me"));
+        addItem(new DummyItem("Sign the guest book!","", "This will eventually change"));
+        addItem(new DummyItem("Location","", ""));
     }
 
     private static void addItem(DummyItem item) {

@@ -71,10 +71,10 @@ public class ItemDetailFragment extends Fragment {
             //fav books
 
         }
-            else if (mItem.id.equals("Guest Book")){
+            else if (mItem.id.equals("Sign the guest book!")){
                 //random info about me
         }
-            else if (mItem.id.equals("Current Location")) {
+            else if (mItem.id.equals("Location")) {
             // use google maps
             startActivity(new Intent(getContext(), MapsActivity2.class));
         }

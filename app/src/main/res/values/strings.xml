@@ -15,5 +15,11 @@
     <string name="facebook">Facebook</string>
     <string name="facebook_com_ani">facebook.com/ani</string>
     <string name="title_activity_maps2">Map</string>
+    <string name="enter_your_email_here">Enter your email here</string>
+    <string name="enter_your_phone_number_here">Enter your phone number here</string>
+    <string name="enter_your_name_here">Enter your name here</string>
+    <string name="guest_name">Guest Name</string>
+    <string name="comments">Comments</string>
+    <string name="enter_your_comments_here">Enter your comments here</string>
 
 </resources>

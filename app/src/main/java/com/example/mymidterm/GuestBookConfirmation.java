@@ -1,0 +1,13 @@
+package com.example.mymidterm;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class GuestBookConfirmation extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_guest_book_confirmation);
+    }
+}
