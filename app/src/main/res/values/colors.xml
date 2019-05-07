@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#49BEFF</color>
-    <color name="colorPrimaryDark">#65DCE5</color>
+    <color name="colorPrimary">#257419</color>
+    <color name="colorPrimaryDark">#6CD828</color>
     <color name="colorAccent">#0D5D98</color>
 
     <color name="address">#2F7092</color>
     <color name="followers">#0D5D98</color>
-    <color name="headings">#3797CF</color>
+    <color name="headings">#FDFD26</color>
     <color name="solidCircle">#80FFFFFF</color>
     <color name="circleBorder">#30FFFFFF</color>
     <color name="gradEnd">#9BE790</color>
