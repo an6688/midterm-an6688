@@ -74,21 +74,45 @@ public class ItemDetailFragment extends Fragment {
             startActivity(intent);*/
         }
             else if (mItem.id.equals("2")){
-            //fav books or movies or whatev
-
+            //fun info about me
+            rootView = inflater.inflate(R.layout.fun_stuff_about_me,container,false);
         }
             else if (mItem.id.equals("3")) {
             //guest book
             rootView = inflater.inflate(R.layout.activity_guest_book, container, false);
+            final Button button = rootView.findViewById(R.id.btnSubmit);
 
             final EditText email = rootView.findViewById(R.id.guest_email);
             final EditText phone = rootView.findViewById(R.id.guest_phone);
             final EditText name = rootView.findViewById(R.id.guest_name);
             final EditText comments = rootView.findViewById(R.id.guest_comments);
 
-            Button button = rootView.findViewById(R.id.btnSubmit);
+            final TextWatcher textWatcher = new TextWatcher() {
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                }
 
-                        button.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    String nameInput = name.getText().toString().trim();
+                    String phoneInput = phone.getText().toString().trim();
+                    String emailInput = email.getText().toString().trim();
+                    String commentInput = comments.getText().toString().trim();
+                    button.setEnabled(!nameInput.isEmpty() && !phoneInput.isEmpty() && !emailInput.isEmpty() && !commentInput.isEmpty());
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+
+                }
+            };
+            name.addTextChangedListener(textWatcher);
+            phone.addTextChangedListener(textWatcher);
+            email.addTextChangedListener(textWatcher);
+            comments.addTextChangedListener(textWatcher);
+
+
+            button.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
                     final GuestBookData guestBookForm = new GuestBookData(email.getText().toString(),

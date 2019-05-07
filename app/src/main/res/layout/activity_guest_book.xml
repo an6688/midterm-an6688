@@ -138,6 +138,6 @@
             android:layout_width="221dp"
             android:layout_height="wrap_content"
             android:text="@string/submit"
-            android:enabled="true"/>
+            android:enabled="false"/>
 </LinearLayout>
 </LinearLayout>

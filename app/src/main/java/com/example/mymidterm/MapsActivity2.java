@@ -37,8 +37,8 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng willametteValley = new LatLng(45.210029, -123.196604);
-        mMap.addMarker(new MarkerOptions().position(willametteValley).title("Willamette Valley Vineyards McMinnville Tasting Room, Northeast 3rd Street, McMinnville, OR"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(willametteValley,16));
+        LatLng halloweenCastle = new LatLng(45.517473, 25.371541);
+        mMap.addMarker(new MarkerOptions().position(halloweenCastle).title("Halloween party at Dracula's Castle in Transylvania"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(halloweenCastle,16));
     }
 }
