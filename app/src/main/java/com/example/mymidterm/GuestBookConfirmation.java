@@ -18,7 +18,14 @@ public class GuestBookConfirmation extends AppCompatActivity {
 
         stringBuffer.append("Thank you ");
         stringBuffer.append(guestBookData.getName());
-        stringBuffer.append(". You have now signed the guest book!");
+        stringBuffer.append(". You have now signed the guest book!\n");
+        stringBuffer.append("Here is the information you provided in the guestbook: ");
+        stringBuffer.append("\n");
+        stringBuffer.append(guestBookData.getPhone());
+        stringBuffer.append("\n");
+        stringBuffer.append(guestBookData.getEmail());
+        stringBuffer.append("\n");
+        stringBuffer.append(guestBookData.getComments());
 
         confirmationMessage.setText(stringBuffer.toString());
     }

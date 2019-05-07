@@ -246,7 +246,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="59dp"
                 android:layout_marginTop="15dp"
                 android:orientation="vertical">
 
@@ -260,10 +260,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:fontFamily="sans-serif-light"
                     android:text="@string/facebook_com_ani"
                     android:textColor="#FFFFFF"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-light" />
 
                 <View
                     android:layout_width="match_parent"
@@ -273,6 +273,33 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LinkedIn"
+                    android:textColor="@color/headings"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="linkedin.com/ani"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-light" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
