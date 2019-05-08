@@ -86,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:fontFamily="sans-serif-light"
-                    android:text="@string/_666k"
+                    android:text="@string/_188k"
                     android:textColor="@color/black"
                     android:textSize="25sp" />
 
@@ -123,7 +123,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:fontFamily="sans-serif-light"
-                    android:text="69"
+                    android:text="76K"
                     android:textColor="@color/black"
                     android:textSize="25sp" />
 

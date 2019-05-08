@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">My Midterm</string>
     <string name="title_item_detail">Item Detail</string>
-    <string name="anil_coklar">Anil Coklar</string>
+    <string name="anil_coklar">Ani Coklar</string>
     <string name="my_address">Portland, OR</string>
-    <string name="_666k">666K</string>
+    <string name="_188k">188K</string>
     <string name="followers">followers</string>
     <string name="following">following</string>
     <string name="email">Email</string>
